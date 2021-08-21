@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<h1 style="font-size:24px;font-family: Calibri, sans-serif; text-align:center;">
+remain here in static.
+</h1>
 <body> 
 
 <style>
-span[data-spell] {
+
+span[v2] {
   display: inline-block;
 }
 
-span[data-spell]::before,
-span[data-spell]::after {
+span[v2]::before,
+span[v2]::after {
   display: none;
 }
 
-span[data-spell]::before {
-  content: attr(data-spell);
+span[v2]::before {
+  content: attr(v2);
 }
 
-span[data-spell]::after {
-  content: attr(data-original);
+span[v2]::after {
+  content: attr(v1);
+  font-style: italic;
 }
 
-span[data-original]:not(:hover)::before,
-span[data-spell]:hover::after {
+span[v1]:not(:hover)::before,
+span[v2]:hover::after {
   display: block;
 }
 
 </style>
 
-<pre style="quote; border: 2px solid Black; width: 50%; margin-left:auto; margin-right:auto; padding: 20px; text-align:center; ">
+<p style=
+"quote; border: 2px solid Black; width: 30%; margin-left:auto; margin-right:auto; padding: 10px; 
+text-align:center; font-family: Garamond, serif;">
 
-<span data-spell="little white" data-original="obstinate"></span> <span data-spell="crosses" data-original="wishes"></span> <span data-spell="and dead" data-original="for new"></span> <span data-spell="kangaroos" data-original="engines that"></span>
-<span data-spell="lead" data-original="missed"></span> the way through <span data-spell="crumbling" data-original="lazy"></span> <span data-spell="bitumen" data-original="shortcuts"></span>
-the radio’s been busted now
-for <span data-spell="days" data-original="your sake"></span> for <span data-spell="weeks" data-original="my sake"></span> for <span data-spell="years" data-original="our sake"></span>
-<span data-spell="we know" data-original="you don't"></span> <span data-spell="not to" data-original="want to"></span> fix it <span data-spell="we" data-original="you"></span>
-remain here in static
-<span data-spell="halfway" data-original="circling"></span> <span data-spell="between" data-original="back through"></span> <span data-spell="stations" data-original="questions"></span>
+<span v2="little white" v1="obstinate"></span> <span v2="crosses" v1="wishes"></span> <span v2="and dead" v1="for new"></span> <span v2="kangaroos" v1="engines that"></span><br>
+<span v2="lead" v1="missed"></span> the way through <span v2="crumbling" v1="lazy"></span> <span v2="bitumen" v1="shortcuts"></span><br>
+the radio’s been busted now<br>
+for <span v2="days" v1="your sake"></span> for <span v2="weeks" v1="my sake"></span> for <span v2="years" v1="our sake"></span><br>
+<span v2="we" v1="you"></span> <span v2="know not" v1="don't want"></span> to fix it <span v2="we" v1="you"></span><br>
+remain here in static<br>
+<span v2="halfway" v1="circling"></span> <span v2="between" v1="back through"></span> <span v2="stations" v1="questions"></span><br>
 
-</pre>
+</p>
 </body>
+
+<footer>
+<p style=
+"width: 70%; padding: 20px; font-family: Calibri, sans-serif; text-align:right; color:Gray; " > 
+Molly Crombie (2021) 
+</p>
+</footer>
+
 </html>
