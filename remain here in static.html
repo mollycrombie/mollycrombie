@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<body> 
+
+<style>
+span[data-spell] {
+  display: inline-block;
+}
+
+span[data-spell]::before,
+span[data-spell]::after {
+  display: none;
+}
+
+span[data-spell]::before {
+  content: attr(data-spell);
+}
+
+span[data-spell]::after {
+  content: attr(data-original);
+}
+
+span[data-original]:not(:hover)::before,
+span[data-spell]:hover::after {
+  display: block;
+}
+
+</style>
+
+<pre style="quote; border: 2px solid Black; width: 50%; margin-left:auto; margin-right:auto; padding: 20px; text-align:center; ">
+
+<span data-spell="little white" data-original="obstinate"></span> <span data-spell="crosses" data-original="wishes"></span> <span data-spell="and dead" data-original="for new"></span> <span data-spell="kangaroos" data-original="engines that"></span>
+<span data-spell="lead" data-original="missed"></span> the way through <span data-spell="crumbling" data-original="lazy"></span> <span data-spell="bitumen" data-original="shortcuts"></span>
+the radio’s been busted now
+for <span data-spell="days" data-original="your sake"></span> for <span data-spell="weeks" data-original="my sake"></span> for <span data-spell="years" data-original="our sake"></span>
+<span data-spell="we know" data-original="you don't"></span> <span data-spell="not to" data-original="want to"></span> fix it <span data-spell="we" data-original="you"></span>
+remain here in static
+<span data-spell="halfway" data-original="circling"></span> <span data-spell="between" data-original="back through"></span> <span data-spell="stations" data-original="questions"></span>
+
+</pre>
+</body>
+</html>
