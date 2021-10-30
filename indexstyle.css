@@ -63,6 +63,21 @@ h1 {
 }
 
 /*
+Image License
+*/
+
+.imglicense {
+	font-size: 0.6rem;
+	font-style: italic;
+	width: 16em;
+	float: left;
+	clear: left;
+	text-align: right;
+	display: inline-block;
+	padding-inline-start: 6.5em;
+}
+
+/*
 
 Standard CSS file for use with Standard.html and Standard-Source.html. 
 
